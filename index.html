@@ -23,7 +23,7 @@
                 </div>
           
                 <div class="navbar-end">
-                  <a class="btn bg-blue-500 border-0">Get started</a>
+                    <button class="btn bg-blue-500 border-0">Get Started</button>
                 </div>
               </div>
         </nav>
@@ -37,9 +37,9 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">Triangle</h2>
                   <p>Area(A) = 0.5 * b * h</p>
-                  <p><input class="border-2 border-indigo-600 w-20" type="text" placeholder=" b">cm <input class="border-2 border-indigo-600 w-20" type="text" placeholder=" h">cm</p>
+                  <p><input id="triangle-base" class="border-2 border-indigo-600 w-20" type="text" placeholder=" b">cm <input id="triangle-height" class="border-2 border-indigo-600 w-20" type="text" placeholder=" h">cm</p>
                   <div class="card-actions">
-                    <button class="btn bg-blue-500 border-0">Calculate</button>
+                    <button id="btn-triangle" class="btn bg-blue-500 border-0">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@
                 </div>
               </div>
             <div class="card bg-base-100 shadow-xl">
-                
+                <h1>Triangle Area is <span  id="output">0</span></h1>
               </div>
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
@@ -114,5 +114,6 @@
               </div>
         </div>
     </main>
+    <script src="./function.js"></script>
   </body>
 </html>
