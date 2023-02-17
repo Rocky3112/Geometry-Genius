@@ -70,3 +70,28 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const show = outputArea.innerText =parallelogramArea;
     
 })
+
+//for Rhombus
+document.getElementById('btn-rhombus').addEventListener('click', function(){
+    const distance1 = document.getElementById('distance1');
+    const distance1String = distance1.value ;
+    const distance1Value = parseInt(distance1String);
+    const distance2 = document.getElementById('distance2');
+    const distance2String = distance2.value ;
+    const distance2Value = parseInt(distance2String);
+    
+    distance1.value ='';
+    distance2.value = '';
+    if(isNaN(distance1Value) || isNaN(distance2Value)){
+        alert('please inter number')
+    }
+    else if(distance1Value<0 || distance2Value<0)
+    {
+        alert('please inter positive number')
+    }
+    const rhombusArea = 0.5 * distance1Value * distance2Value;
+      
+    const outputArea = document.getElementById('rhombus-output');
+    const show = outputArea.innerText =rhombusArea;
+    
+})
