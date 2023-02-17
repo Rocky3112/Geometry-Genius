@@ -16,20 +16,21 @@
   <body>
     <header>
         <nav>
-            <div class="navbar bg-cyan-100 px-16 my-5 pb-5">
-                <div class="navbar-start">
-                  <a class="btn btn-ghost normal-case text-2xl ">Interactive <br>
-          Geometry Genius</a>
+            <div class="lg:flex flex-column justify-between items-center bg-cyan-100 px-16 my-5 p-5">
+                <div class="">
+                  <h1 class=" text-2xl"><span class="btn btn-ghost normal-case text-4xl text-semibold">Interactive</span><br>
+          Geometry Genius</h1>
                 </div>
           
-                <div class="navbar-end">
+                <div class="">
                     <button class="btn bg-blue-500 border-0">Get Started</button>
                 </div>
               </div>
         </nav>
     </header>
     <main>
-        <div class="grid grid-cols-4 grid-cols-md-2 grid-cols-sm-1 gap-4">
+        <div class="grid grid-cols-12 gap-4">
+        <div class="grid col-span-8 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/triangle.png" />
@@ -69,12 +70,7 @@
                   </div>
                 </div>
               </div>
-            <div class="card bg-base-100 shadow-xl">
-                <h1>Triangle Area is <span  id="triangle-output">0</span></h1>
-                <h1>Rectriangle Area is <span  id="rectangle-output">0</span></h1>
-                <h1>Parallelogram Area is <span  id="parallelogram-output">0</span></h1>
-                <h1>Rhombus Area is <span  id="rhombus-output">0</span></h1>
-              </div>
+            
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/rhombus.png" />
@@ -116,6 +112,15 @@
                 </div>
               </div>
         </div>
+        <div class="grid col-span-4">
+            <div class="card bg-base-100 shadow-xl">
+                <h1>Triangle Area is <span  id="triangle-output">0</span></h1>
+                <h1>Rectriangle Area is <span  id="rectangle-output">0</span></h1>
+                <h1>Parallelogram Area is <span  id="parallelogram-output">0</span></h1>
+                <h1>Rhombus Area is <span  id="rhombus-output">0</span></h1>
+              </div>
+        </div>
+    </div>
     </main>
     <script src="./function.js"></script>
   </body>
