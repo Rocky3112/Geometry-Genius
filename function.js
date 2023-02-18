@@ -22,6 +22,7 @@ function inputFieldNumbers(id1){
     
     return inputNumberValue;
 }
+let n=0;
 document.getElementById('btn-triangle').addEventListener('click', function(){
    
     const triangleBaseValue = inputFieldNumbers('triangle-base');
@@ -31,6 +32,12 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const outputArea = document.getElementById('triangle-output');
     outputArea.innerText =triangleArea.toFixed(2);
 
+    // const child = document.getElementById('parent');
+    // const newChild = document.createElement('h1');
+    // newChild.innerText = triangleArea;
+
+    // child.appendChild(newChild);
+    
     
     
 })
