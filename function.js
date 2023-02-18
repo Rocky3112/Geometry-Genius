@@ -1,3 +1,9 @@
+const button = document.getElementById("myButton");
+  button.addEventListener("click", function() {
+    window.location.href = "questionAnswer.html";
+  });
+
+
 //for Triangle
 function inputFieldNumbers(id1){
     const inputNumber = document.getElementById(id1);
