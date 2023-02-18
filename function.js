@@ -8,7 +8,7 @@ const button = document.getElementById("myButton");
 function inputFieldNumbers(id1){
     const inputNumber = document.getElementById(id1);
     const inputNumberString = inputNumber.value ;
-    const inputNumberValue = parseInt(inputNumberString);
+    const inputNumberValue = parseFloat(inputNumberString).toFixed(2);
    
     inputNumber.value ='';
     
@@ -29,7 +29,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleArea = 0.5 * triangleBaseValue * triangleHeightValue;
       
     const outputArea = document.getElementById('triangle-output');
-    outputArea.innerText =triangleArea;
+    outputArea.innerText =triangleArea.toFixed(2);
+
     
     
 })
@@ -41,7 +42,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     const rectangleArea =rectangleWidthValue * rectangleLengthValue;
       
     const outputArea = document.getElementById('rectangle-output');
-    outputArea.innerText =rectangleArea;
+    outputArea.innerText =rectangleArea.toFixed(2);
     
 })
 
@@ -53,7 +54,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const parallelogramArea =  parallelogramBaseValue * parallelogramHeightValue;
       
     const outputArea = document.getElementById('parallelogram-output');
-    outputArea.innerText =parallelogramArea;
+    outputArea.innerText =parallelogramArea.toFixed(2);
     
 })
 
@@ -65,7 +66,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     const rhombusArea = 0.5 * distance1Value * distance2Value;
       
     const outputArea = document.getElementById('rhombus-output');
-    outputArea.innerText =rhombusArea;
+    outputArea.innerText =rhombusArea.toFixed(2);
     
 })
 //for Pentagon
@@ -76,7 +77,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const pentagonArea = 0.5 * distance1Value * distance2Value;
       
     const outputArea = document.getElementById('pentagon-output');
-    outputArea.innerText =pentagonArea;
+    outputArea.innerText =pentagonArea.toFixed(2);
     
 })
 
@@ -91,3 +92,42 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     outputArea.innerText =ellipseArea.toFixed(2);
     
 })
+
+//for random background color
+
+var element1 = document.getElementById('myDiv1');
+
+element1.addEventListener("mouseover", function() {
+  var randomColor1 = Math.floor(Math.random()*16777215).toString(16);
+  element1.style.backgroundColor = "#" + randomColor1;
+});
+var element2 = document.getElementById('myDiv2');
+
+element2.addEventListener("mouseover", function() {
+  var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+  element2.style.backgroundColor = "#" + randomColor2;
+});
+var element3 = document.getElementById('myDiv3');
+
+element3.addEventListener("mouseover", function() {
+  var randomColor3 = Math.floor(Math.random()*16777215).toString(16);
+  element3.style.backgroundColor = "#" + randomColor3;
+});
+var element4 = document.getElementById('myDiv4');
+
+element4.addEventListener("mouseover", function() {
+  var randomColor4 = Math.floor(Math.random()*16777215).toString(16);
+  element4.style.backgroundColor = "#" + randomColor4;
+});
+var element5 = document.getElementById('myDiv5');
+
+element5.addEventListener("mouseover", function() {
+  var randomColor5 = Math.floor(Math.random()*16777215).toString(16);
+  element5.style.backgroundColor = "#" + randomColor5;
+});
+var element6 = document.getElementById('myDiv6');
+
+element6.addEventListener("mouseover", function() {
+  var randomColor6 = Math.floor(Math.random()*16777215).toString(16);
+  element6.style.backgroundColor = "#" + randomColor6;
+});

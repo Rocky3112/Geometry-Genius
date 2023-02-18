@@ -29,9 +29,9 @@
         </nav>
     </header>
     <main>
-        <div class="grid grid-cols-12 gap-4">
+        <div class="grid grid-cols-12 gap-4 lg:px-16">
         <div class="grid col-span-8 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv1" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/triangle.png" />
                 </figure>
@@ -44,7 +44,7 @@
                   </div>
                 </div>
               </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv2" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/rectangle.png" />
                 </figure>
@@ -57,7 +57,7 @@
                   </div>
                 </div>
               </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv3" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/parallelogram.png" />
                 </figure>
@@ -71,7 +71,7 @@
                 </div>
               </div>
             
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv4" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/rhombus.png" />
                 </figure>
@@ -84,7 +84,7 @@
                   </div>
                 </div>
               </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv5" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/pentagon.png" />
                 </figure>
@@ -97,7 +97,7 @@
                   </div>
                 </div>
               </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div id="myDiv6" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/ellipse.png" />
                 </figure>
@@ -115,6 +115,9 @@
         <div class="grid col-span-4">
             <div class="card bg-base-100 shadow-xl p-5">
                 <h1 class="text-4xl text-center pb-5">Area Calculation</h1>
+                <div id="parent">
+
+                </div>
                 <h1 class="">Triangle = <span  id="triangle-output">0</span> cm<sup>2</sup>  <button id="btn-ellipse" class=" bg-blue-500 border-0 py-2 px-3 rounded-lg ">Convert to m<sup>2</sup></button> </h1><br>
                 <h1>Rectriangle Area is <span  id="rectangle-output">0</span> cm<sup>2</sup>  <button id="btn-ellipse" class=" bg-blue-500 border-0 py-2 px-3 rounded-lg ">Convert to m<sup>2</sup></button> </span></h1><br>
                 <h1>Parallelogram Area is <span  id="parallelogram-output">0</span> cm<sup>2</sup>  <button id="btn-ellipse" class=" bg-blue-500 border-0 py-2 px-3 rounded-lg ">Convert to m<sup>2</sup></button> </span></h1><br>
